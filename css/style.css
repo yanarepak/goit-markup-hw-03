@@ -9,6 +9,7 @@
     --contacts-color:rgba(255, 255, 255, 0.6);
     --header-logo-color:#000000;
 }
+
 body{
     font-family: 'Roboto', sans-serif;
     color:var(--primary-text-color);
@@ -27,6 +28,7 @@ body{
     text-decoration: none;
     margin-right: 93px;
 }
+
 .page-header .wrap{
     color: var(--header-logo-color);
 }
@@ -56,6 +58,7 @@ img {
     display: block;
 
 }
+
 .container{
     width: 1200px;
     margin-left: auto;
@@ -63,6 +66,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -84,6 +88,7 @@ img {
 .site-nav .item + .item{
     margin-left: 50px;
 }
+
 .site-nav .link{
     display: block;
 
@@ -95,18 +100,22 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus{
     color:var(--accent-color);
 }
+
 .site-nav .link.current{
     color:var(--accent-color);
 }
+
 .contacts-nav{
     display: flex;
     font-style:normal;
-    margin: auto;
+    margin-left: auto;
 }
+
 .contacts-nav .item + .item{  /*Чи можна було використати замість цього column -gap 50px??*/
     margin-left: 50px;
 }
@@ -120,31 +129,42 @@ img {
     text-decoration: none;
     margin-left: auto;
 }
+
 .contacts-nav .link:hover,
 .contacts-nav .link:focus{
     color:var(--accent-color);
 }
+
 .navigation-header{
     display: flex;
     align-items: center;
 }
 
-.page-header .container{
-   display: flex;
-   align-items: center;
+.page-header{
    padding-top: 32px;
    padding-bottom: 32px;
    border-bottom: 1px solid #ECECEC;
 }
 
+.page-header-container{
+    display: flex;
+    align-items: center;
+}
+
 /* ===================================ГЕРОЙ========================== */
 .hero{
+    text-align: center;
     background-color: var(--secondary-fond-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
-.hero .title{
-    min-width: 696px;
-    margin-bottom: 30px;
 
+.hero .title{
+    width: 696px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+     
     color:var(--fond-color);
     
     font-weight: 900;
@@ -154,9 +174,8 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.hero-container .button.primary{
-    
-    margin-bottom: 200px;
+
+.button.primary{
     
     min-width: 216px;
     padding: 10px 32px;
@@ -170,17 +189,20 @@ img {
 
 .section-features{
     padding-top: 94px;
-    padding-bottom: 47px; 
+    padding-bottom: 47px;
 }
+
 .features.list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
 }
+
 .features .item {
     width: 270px;
     flex-basis: calc((100% - 3 * 30px) / 4);
 }
+
 .features.list .title {
     width: 270px;
     margin-bottom: 10px;
@@ -192,6 +214,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
 .features.list .text {
     font-size: 14px;
     line-height: 1.7;
@@ -200,13 +223,15 @@ img {
 /* ===============WORK============== */
 .section-work{
     padding-top: 47px;
-    padding-bottom: 94px;   
+    padding-bottom: 94px;
 }
+
 .work.list{
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
 }
+
 .work .item{
     width: 370px;
     flex-basis: calc((100% - 2 * 30px) / 3);
@@ -229,11 +254,13 @@ img {
     padding-bottom: 94px;
     background-color: #F5F4FA;
 }
+
 .team.list{
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
 }
+
 .team .item {
     flex-basis: calc((100% - 3 * 30px)  / 4);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -248,11 +275,13 @@ img {
     line-height: 1.9;
     letter-spacing: 0.03em
 }
+
 .team.list .text{
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
 }
+
 .team-description-wrap{
     text-align: center;
     padding-top: 30px ;
@@ -276,11 +305,13 @@ img {
     cursor: pointer;
     border-color: transparent;
 }
+
 .button:hover,
 .button:focus{
    color: var(--fond-color);
    background-color: var(--accent-color);
 }
+
 .button.primary{
     color: var(--fond-color);
     background-color:var(--accent-color);
@@ -303,15 +334,21 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .projects.list{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
+    gap: 30px;
 }
+
+.project-description-wrap{
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
 .projects .title{
-    width: 322px;
-    margin-top: 20px;
     margin-bottom: 4px;
+    padding-top: 20px;
     padding-left: 24px;
 
     color: var(--title-text-color);
@@ -320,11 +357,8 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.projects .item{
-    /* margin-bottom: 30px; (як поставити усім окрім трьох останніх?) */
-}
+
 .projects .text{
-    width: 322px;
     margin-bottom: 20px;
     padding-left: 24px;
 
@@ -337,11 +371,16 @@ img {
     letter-spacing: 0.03em;
     background-color: var(--secondary-fond-color);
 }
+
+.page-footer-container{
+    padding-top: 60px;
+}
+
 .page-footer .wrap{
     color: var(--fond-color);
 }
 
-.link.address{
+.address{
     color: var(--fond-color);
     font-weight: 400;
     font-size: 14px;
@@ -350,9 +389,20 @@ img {
     text-decoration: none;
     font-style: normal;
 }
-.address-nav .link.mail,
-.address-nav .link.tel{
+
+.address-nav-list{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+}
+
+.address-mail,
+.address-tel{
     color: var(--contacts-color);
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7px;
@@ -360,7 +410,8 @@ img {
     text-decoration: none;
     font-style: normal;
 }
-.address-nav .link:hover,
-.address-nav .link:focus {
+
+.address-nav-list .link:hover,
+.address-nav-list .link:focus {
     color: var(--accent-color);
 }
