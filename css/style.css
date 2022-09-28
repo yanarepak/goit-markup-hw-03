@@ -1,0 +1,366 @@
+/*=============================== ОСНОВНІ СТИЛІ=========================== */
+:root{
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color:#2196F3;
+    --fond-color:#FFFFFF;
+    --secondary-fond-color:#2F303A;
+    --buttons-fond-color:#F5F4FA; /*застосовується на бекгроунд Наша команда*/
+    --contacts-color:rgba(255, 255, 255, 0.6);
+    --header-logo-color:#000000;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color:var(--primary-text-color);
+    background-color:var(--fond-color);
+    position: relative;
+}
+
+.logo{
+    color: var(--accent-color);
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-right: 93px;
+}
+.page-header .wrap{
+    color: var(--header-logo-color);
+}
+
+.list{
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+
+}
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+/* ============================СТИЛІ ДЛЯ СТУДІЯ======================= */
+
+/* =================НАВІГАЦІЯ ХЕДЕРА========================*/
+
+.site-nav{
+    display: flex;
+}
+
+.site-nav .item + .item{
+    margin-left: 50px;
+}
+.site-nav .link{
+    display: block;
+
+    color:var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color:var(--accent-color);
+}
+.site-nav .link.current{
+    color:var(--accent-color);
+}
+.contacts-nav{
+    display: flex;
+    font-style:normal;
+    margin: auto;
+}
+.contacts-nav .item + .item{  /*Чи можна було використати замість цього column -gap 50px??*/
+    margin-left: 50px;
+}
+
+.contacts-nav .link {  /* тел і мейл в хедері*/
+    color:var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    margin-left: auto;
+}
+.contacts-nav .link:hover,
+.contacts-nav .link:focus{
+    color:var(--accent-color);
+}
+.navigation-header{
+    display: flex;
+    align-items: center;
+}
+
+.page-header .container{
+   display: flex;
+   align-items: center;
+   padding-top: 32px;
+   padding-bottom: 32px;
+   border-bottom: 1px solid #ECECEC;
+}
+
+/* ===================================ГЕРОЙ========================== */
+.hero{
+    background-color: var(--secondary-fond-color);
+}
+.hero .title{
+    min-width: 696px;
+    margin-bottom: 30px;
+
+    color:var(--fond-color);
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.37;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-container .button.primary{
+    
+    margin-bottom: 200px;
+    
+    min-width: 216px;
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+}
+/* =============СТИЛІ ДЛЯ ПОРТФОЛІО============== */
+/* =============Features=========== */
+
+.section-features{
+    padding-top: 94px;
+    padding-bottom: 47px; 
+}
+.features.list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+.features .item {
+    width: 270px;
+    flex-basis: calc((100% - 3 * 30px) / 4);
+}
+.features.list .title {
+    width: 270px;
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.features.list .text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+/* ===============WORK============== */
+.section-work{
+    padding-top: 47px;
+    padding-bottom: 94px;   
+}
+.work.list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+.work .item{
+    width: 370px;
+    flex-basis: calc((100% - 2 * 30px) / 3);
+}
+
+.section-work-title,
+.section-team-title{
+    margin-bottom: 50px;
+
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/* ==================TEAM============== */
+/* ЯК ВІДЦЕНТРУВАТИ??? */
+.section-team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+}
+.team.list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+.team .item {
+    flex-basis: calc((100% - 3 * 30px)  / 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team.list .title{
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em
+}
+.team.list .text{
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+}
+.team-description-wrap{
+    text-align: center;
+    padding-top: 30px ;
+    padding-bottom: 30px ;
+
+}
+
+/* ==================Кнопки===================== */
+.button{
+    border-radius: 4px;
+
+    color:var(--title-text-color);
+    background-color:var(--buttons-fond-color);
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border-color: transparent;
+}
+.button:hover,
+.button:focus{
+   color: var(--fond-color);
+   background-color: var(--accent-color);
+}
+.button.primary{
+    color: var(--fond-color);
+    background-color:var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+}
+/* =============ПОРТФОЛІО============ */
+/* Фільтер проектів (кнопки) */
+.filters.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-bottom: 34px;
+    column-gap: 10px;
+}
+/* Список проектів */
+.section-projects{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.projects.list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+.projects .title{
+    width: 322px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    padding-left: 24px;
+
+    color: var(--title-text-color);
+
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.projects .item{
+    /* margin-bottom: 30px; (як поставити усім окрім трьох останніх?) */
+}
+.projects .text{
+    width: 322px;
+    margin-bottom: 20px;
+    padding-left: 24px;
+
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+}
+/*=================ФУТЕР============== */
+.page-footer {
+    letter-spacing: 0.03em;
+    background-color: var(--secondary-fond-color);
+}
+.page-footer .wrap{
+    color: var(--fond-color);
+}
+
+.link.address{
+    color: var(--fond-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;  
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-style: normal;
+}
+.address-nav .link.mail,
+.address-nav .link.tel{
+    color: var(--contacts-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-style: normal;
+}
+.address-nav .link:hover,
+.address-nav .link:focus {
+    color: var(--accent-color);
+}
