@@ -5,7 +5,7 @@
     --accent-color:#2196F3;
     --fond-color:#FFFFFF;
     --secondary-fond-color:#2F303A;
-    --buttons-fond-color:#F5F4FA; /*застосовується на бекгроунд Наша команда*/
+    --buttons-fond-color:#F5F4FA; 
     --contacts-color:rgba(255, 255, 255, 0.6);
     --header-logo-color:#000000;
 }
@@ -15,6 +15,7 @@ body{
     color:var(--primary-text-color);
     background-color:var(--fond-color);
     position: relative;
+    margin: 0;
 }
 
 .logo{
@@ -248,7 +249,6 @@ img {
     letter-spacing: 0.03em;
 }
 /* ==================TEAM============== */
-/* ЯК ВІДЦЕНТРУВАТИ??? */
 .section-team{
     padding-top: 94px;
     padding-bottom: 94px;
