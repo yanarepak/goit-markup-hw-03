@@ -304,6 +304,7 @@ img {
     letter-spacing: 0.03em;
     cursor: pointer;
     border-color: transparent;
+    border: none;
 }
 
 .button:hover,
@@ -322,20 +323,25 @@ img {
 }
 /* =============ПОРТФОЛІО============ */
 /* Фільтер проектів (кнопки) */
-.filters.list{
+.filters-list{
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
     margin-bottom: 34px;
     column-gap: 10px;
 }
+
+.filters-button{
+    padding: 6px 22px;
+}
+
 /* Список проектів */
 .section-projects{
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.projects.list{
+.projects-list{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -346,7 +352,7 @@ img {
     border-top: none;
 }
 
-.projects .title{
+.projects-list-title{
     margin-bottom: 4px;
     padding-top: 20px;
     padding-left: 24px;
@@ -358,7 +364,7 @@ img {
     letter-spacing: 0.06em;
 }
 
-.projects .text{
+.projects-list-text{
     margin-bottom: 20px;
     padding-left: 24px;
 
